@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.bicep": "bicep",
+    "*.bicepparam": "bicep-params"
+  },
+  "[bicep]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-bicep",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  }
+}

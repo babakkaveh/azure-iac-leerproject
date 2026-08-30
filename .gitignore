@@ -1,0 +1,20 @@
+# Bicep / ARM build output
+*.json.bak
+bin/
+obj/
+
+# Azure CLI / auth
+.azure/
+
+# Environment / secrets
+.env
+*.pfx
+*.publishsettings
+
+# VS Code local overrides
+.vscode/*.local.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
