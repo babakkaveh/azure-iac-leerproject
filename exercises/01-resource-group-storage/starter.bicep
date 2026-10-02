@@ -2,11 +2,13 @@
 // Doel scope: resource group (deploy met 'az deployment group create')
 
 // TODO 1: parameter 'location' (string, default resourceGroup().location)
+param location string = resourceGroup().location
 
 // TODO 2: parameter 'environment' met @allowed(['dev', 'test', 'prod'])
-
+@allowed(['dev', 'test', 'prod'])
+param environment string
 // TODO 3: parameter 'storageSku' (default 'Standard_LRS')
-
+param storageSku string = 'Standard_LRS'
 // TODO 4: variable 'storageAccountName' -> bv. toLower('st${environment}${uniqueString(resourceGroup().id)}')
 //         (moet <= 24 tekens zijn, alleen kleine letters/cijfers)
 
